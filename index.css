@@ -25,9 +25,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 90%;
     max-width: 350px;
     overflow: hidden;
     border-radius: 10px;
+}
+
+.img img{
+    width:100%;
+    height: auto;
+    display: block;
 }
 
 h2 {
@@ -55,6 +62,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: 85%;
     max-width: 300px;
     padding: 20px;
     border-radius: 10px;
@@ -62,7 +70,8 @@ h2 {
 
 .img-con {
     display: flex;
-    width: 300px;
+    width: auto;
+    flex: 1;
     justify-content: left;
     align-items: center;
 }
@@ -101,7 +110,8 @@ span {
     background-color: #382AE1;
     padding: 15px;
     color: white;
-    width: 300px;
+    width: 85%;
+    max-width: 300px;
     border-radius: 10px;
     font-weight: 600;
     margin-top: 20px;
@@ -130,4 +140,29 @@ span {
 footer {
     bottom: 0;
     position: absolute;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-size: 100% auto;
+    }
+
+    .main-con {
+        padding: 25px;
+    }
+
+    .para1 {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .sec-con {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
